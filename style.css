@@ -1,0 +1,403 @@
+ @font-face {
+    font-family: "narkiss-linotype";
+    font-weight: bold;
+    src: url("fonts/narkiss-linotype-bold.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "narkiss-linotype";
+    font-weight: normal;
+    src: url("fonts/narkiss-linotype-regular.woff2") format("woff2");
+}
+
+@font-face {
+    font-family:"MF_NarkisTam" ;
+    src: url("fonts/MF_NarkisTam-Light.woff2") format("woff2");
+}
+
+
+    
+    /*---nav style bar---  */
+
+      
+      .menu {
+        background: #efefef;
+        width: 188px;
+        height: 100vh;
+        top:0;
+        padding-left: 50px;
+        position: fixed;
+        z-index: 105;
+        -webkit-box-shadow: -3px 0px 5px 0px rgba(0, 0, 0, 0.2);
+        box-shadow: -3px 0px 5px 0px rgba(0, 0, 0, 0.2);
+        right: -130px;
+        transition: all 0.3s;
+        -webkit-transition: all 0.3s;
+        color: #222;
+      }
+      .menu:hover, .menu:focus {
+        transform: translate3d(-130px, 0, 0);
+        animation-timing-function: 1s ease-in;
+      }
+      .menu .title {
+        top: 50%;
+        position: absolute;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        transform: rotate(270deg);
+        left: 0;
+        /* font-weight: 800; */
+        font-size: 15px;
+        letter-spacing: 2.5px;
+      }
+      .menu .nav {
+        position: absolute;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+      }
+      .menu .nav li {
+        padding-bottom: 30px;
+        list-style-type: none;
+      }
+      .menu .nav li a {
+        display: block;
+        text-decoration: none;
+        color: inherit;
+        transition: all 0.3s;
+        -webkit-transition: all 0.3s;
+      }
+      .menu .nav li a:hover {
+        color: #aaa;
+      }
+
+* {
+    box-sizing: border-box;
+}
+
+
+
+.hide {
+    
+  }
+
+.hide img {
+position:absolute;
+top: 0;
+left: 0;
+width:100vw;
+z-index: -1;
+-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+filter: grayscale(100%);
+/* display: none; */
+opacity: 0;
+transition:opacity 1s ease-in-out;
+}
+    
+
+  
+.onhoverimg1:hover ~ .hide img:nth-child(1) {
+    /* display:block; */
+    opacity: 0.3;
+
+
+
+  }
+
+  
+.onhoverimg2:hover ~ .hide img:nth-child(2) {
+    /* display:block; */
+    opacity: 0.3;
+
+  }
+
+  .onhoverimg3:hover ~ .hide img:nth-child(3) {
+    /* display:block; */
+    opacity: 0.3;
+
+  }
+
+  .onhoverimg3:hover ~ .hide img:nth-child(4) {
+    /* display:block; */
+    opacity: 0.3;
+
+  }
+
+
+
+  hi{
+       opacity: 0.6;
+    z-index:-103 ;
+    width: 964px;
+    /* padding: 9rem 0 5rem;
+    padding-left: 0px;
+    padding-left: 64px; */
+  }
+
+/* div.fixed {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 300px;
+    z-index: 200;
+} */
+
+.progress-bar {
+    /* background: linear-gradient( -45deg, grey calc(100% * var(--scroll)), transparent 0); */
+    /* background-image: linear-gradient( to left, #0a0a0a, blanchedalmond); */
+    background-color: blanchedalmond;
+    background-repeat: no-repeat;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    left: 0;
+    right: 0;
+    height: 20px;
+    z-index: 104;
+}
+
+body {
+    font-family: "narkiss-linotype", "Arial", sans-serif;
+    background-color:#050505;
+    color: blanchedalmond;
+}
+
+
+
+h1 {
+    margin: 0;
+    text-align: center;
+    /* Play with the font size in vw units so that it fills the whole row: */
+    font-size: 14.5vw;
+    line-height: 1;
+    /* Adjust letter spacing to make it extra tight: */
+    /* letter-spacing: -0.035em; */
+    margin-bottom: 150px;
+}
+
+
+h2 {
+    /* font-weight: normal; */
+    text-align:center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    /* padding-top: 50px; */
+    /* width: 5px; */
+   
+}
+
+h3 {
+    display:block;
+    margin: 40px auto;
+    text-align: center;
+    /* Play with the font size in vw units so that it fills the whole row: */
+    font-size: 5.5vw;
+    line-height: 1;
+    z-index:1;
+    /* Adjust letter spacing to make it extra tight: */
+    /* letter-spacing: -0.035em; */
+}
+
+.content {
+    position: relative;
+    z-index: 102;
+    background-color: #332E2E;
+    padding: 9rem 0 5rem;
+    padding-left: 0px;
+    padding-left: 64px;
+}
+
+
+
+
+
+#id {
+    font-family: "narkiss-linotype","MF_NarkisTam";
+    font-size: 18px;
+    line-height:20px;
+    letter-spacing: 3px;
+    margin-right: 600px;
+    margin-left: 600px;
+}
+
+#idR {
+    font-family: "narkiss-linotype","MF_NarkisTam";
+    font-size: 18px;
+    line-height:20px;
+    letter-spacing: 3px;
+    margin-right: 350px;
+    margin-left: 600px;
+
+}
+
+p {
+    font-size: 20px;
+    letter-spacing:1pt;
+    width: 650px;
+    margin: auto;
+    margin-bottom: 2.625rem;
+    margin-top: 0;
+    vertical-align: baseline;
+    line-height:1.5em;
+    opacity: 0.6;
+    /*60% opcity*/
+    transition: opacity 350ms;
+    /* enable transition just for the opacity property */
+}
+
+p:hover {
+    opacity: 1;
+    /* make the p not transparent on hover */
+    /*z-index: 1;*/
+    /* bring the p to the front on hover */
+}
+
+
+
+
+section {
+    display: flex;
+    position:relative;
+    
+}
+
+.note {
+    width:200px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    opacity: 0;
+    transition: all 1s ease-in-out;
+
+    }
+
+.note img{
+    width: 150px;
+
+}
+
+.note p {
+    font-family: "MF_NarkisTam";
+    font-size:14px;
+    width: 100%;
+    line-height:18px;
+}
+
+.h-note:hover + .note {
+    opacity: 1;
+}
+
+
+.Big {
+    width: 900px;
+    font-size: 2em;
+    font-weight: bold;
+    line-height: 1.1em;
+    text-align: right;
+    transition: all 700ms 180s;
+    margin: 100px auto;
+}
+.Big:hover {
+    
+    transition: all 700ms ;
+
+}
+
+.borderline {
+    text-align: center;
+    font-weight: bold;
+}
+
+footer img { 
+    width: 528px;
+    float: left;
+    margin-top: 100px;
+    margin-left:50px;
+    /* flex-wrap: nowrap;
+    z-index: index -1; */
+
+
+}
+
+.tfooter{
+    font-size:14px;
+    text-align: right;
+    margin-right: 150px;
+    padding-top:50px;
+    color:whitesmoke;
+   
+    width:600px;
+    flex-wrap: nowrap;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: whitesmoke;
+    background-image: linear-gradient(to right, blanchedalmond, #333, #ccc);
+}
+
+
+
+#end {
+    font-size:10px;
+    text-align: right;
+    margin-top: 42px;
+    margin-bottom: 0px;
+    margin-right: 150px;
+    color:whitesmoke;
+   
+   
+}
+
+a:not([class]) {
+    position: relative;
+    display: inline-block;
+    color: rgb(164, 16, 16);
+
+} 
+
+ a:active,
+a:hover {
+    outline: 0;
+}
+
+a {
+    text-decoration: none;
+    transition: color 200ms ease-out;
+}
+
+a {
+    background-color: transparent;
+}
+
+
+/* @media only screen and (max-width: 1200px) {
+    p {
+        font-size: 1em;
+        width: 100%;
+    }
+
+    .big {
+        font-size:1.5em;
+        width:100% ;
+    }
+
+    .content {
+        padding: 0 20px;
+    }
+    
+    .note { 
+        background-color:#332E2E;
+        padding: 15px;
+    }
+} */
+
+/* iped
+@media only screen and (max-width: 768px) {
+
+} */
+
